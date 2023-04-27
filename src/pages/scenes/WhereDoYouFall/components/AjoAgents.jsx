@@ -8,7 +8,7 @@ const AjoAgents = () => {
             </div>
 
             <p className="flex-1 xl:text-right font-Open text-xl md:text-2xl lg:text-[38px] font-normal max-w-[890px] leading-8 lg:leading-[62.85px]">
-                <span className="font-bold">Ajoconnect agents</span>{" "}
+                <span className="font-bold">Ajoconnect Agents</span>{" "}
                 are typically individuals or small businesses that operate in underserved communities and provide financial services such as savings and loans to their customers. Our mobile app platform provides these agents with a more efficient and reliable way to manage their transactions and customer relationships.
             </p>
         </div>

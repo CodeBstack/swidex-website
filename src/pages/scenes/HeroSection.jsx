@@ -10,7 +10,7 @@ const HeroSection = () => {
     return (
         <>
             {/* SHOWS ONLY ON SCREENS LOWER THAN 1280PX */}
-            <main className="relative min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
+            <main className="h-screen lg:min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
                 <nav className="sticky w-full top-0 flex justify-between items-center py-4 lg:py-[37px]">
                     <div className="  flex-1 pt[37px]">
                         <LogoIcon />
