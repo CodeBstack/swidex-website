@@ -5,29 +5,32 @@ import Image from 'next/image'
 const WhatWeOfferSection = () => {
 
     return (
-        <section id='section_2' className='min-h-screen w-full px-4 sm:px-6 md:px-10 xl:px-[100px] pb-[95px]'>
-            <div className="hidden -mt-[79px] font-Lato  translate-x-[0%] h-[158px] font-semibold text-[34px] xl:flex justify-center items-center w-full max-w-[987px] mx-auto rounded-[30px] bg-what-we-are-bringing-section bg-cover text-black">
-                What are we bringing to the table?
+        <section id='section_2' className='min-h-screen w-full  md:px-10 xl:px-[100px] pb-[95px]'>
+            <div className="px-4 sm:px-6">
+
+                <div className="hidden -mt-[79px] font-Lato  translate-x-[0%] h-[158px] font-semibold text-[34px] xl:flex justify-center items-center w-full max-w-[987px] mx-auto rounded-[30px] bg-what-we-are-bringing-section bg-cover text-black">
+                    What are we bringing to the table?
+                </div>
+
+                <p className="pt-7 font-Lato text-2xl sm:text-3xl font-semibold xl:hidden">
+                    What are we bringing to the table?
+                </p>
+
+                <div className="mt-[60px] md:mt-[169px] gap-10 grid grid-cols-1 md:grid-cols-2">
+                    {staticData.map((data, i) =>
+                        <WhatWeOfferCard
+                            key={`${data.heading}_${i}`}
+                            data={data}
+                        />
+                    )}
+                </div>
             </div>
 
-            <p className="pt-7 font-Lato text-2xl sm:text-3xl font-semibold xl:hidden">
-                What are we bringing to the table?
-            </p>
 
-            <div className="mt-[60px] md:mt-[169px] gap-10 grid grid-cols-1 md:grid-cols-2">
-                {staticData.map((data, i) =>
-                    <WhatWeOfferCard
-                        key={`${data.heading}_${i}`}
-                        data={data}
-                    />
-                )}
-            </div>
-
-
-            <div className="bg-primary mt-[106px] rounded-xl md:rounded-[30px] px-6 pt-6 flex flex-col-reverse 2xl:flex-row gap-16 2xl:gap-[92px] md:px-10 md:pt-10 2xl:px-[108px] ">
+            <div className="bg-primary mt-[106px] md:rounded-[30px] px-4 sm:px-6 pt-6 flex flex-col-reverse 2xl:flex-row gap-16 2xl:gap-[92px] md:px-10 md:pt-10 2xl:px-[108px] ">
                 <div className="md:w-[425px] md:h-[579px] self-center 2xl:self-end">
                     <img className='w-full h-full' src='/images/mobile_app.png' alt='mobile_app' width={'100%'} height={'100%'} />
-                </div> 
+                </div>
 
 
                 <div className="flex-1 2xl:pt-20 2xl:pb-12">
@@ -74,7 +77,7 @@ const WhatWeOfferSection = () => {
                                     <li className="list-disc">
                                         Depositing or withdrawing money from their account
                                     </li>
-                                    <li className="list-disc">
+                                    <li className="list-disc py-2">
                                         Paying for loans
                                     </li>
                                     <li className="list-disc">

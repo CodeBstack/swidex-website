@@ -10,7 +10,7 @@ const HeroSection = () => {
     return (
         <>
             {/* SHOWS ONLY ON SCREENS LOWER THAN 1280PX */}
-            <main className="relative h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] xl:hidden">
+            <main className="relative min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
                 <nav className="sticky w-full top-0 flex justify-between items-center py-4 lg:py-[37px]">
                     <div className="  flex-1 pt[37px]">
                         <LogoIcon />
@@ -50,7 +50,7 @@ const HeroSection = () => {
                                     href='#'
 
                                 >
-                                    <span className=''>{navlink.title}</span>
+                                    {navlink.title}
                                 </a>
                             ))}
                         </div>
@@ -89,8 +89,8 @@ const HeroSection = () => {
             </main>
 
             {/* SHOWS ONLY ON SCREENS LARGER THAN 1280PX */}
-            <main className='hidden xl:flex '>
-                <div className="flex flex-col justify-center relative pl-4 sm:pl-6 md:pl-10 xl:pl-[100px] h-screen w-[65%] bg-header-bg bg-cover bg-no-repeat">
+            <main className='hidden xl:flex pb-20'>
+                <div className="flex flex-col justify-center relative pl-4 sm:pl-6 md:pl-10 xl:pl-[100px] min-h-screen w-[65%] bg-header-bg bg-cover bg-no-repeat">
                     <div className=" absolute top-[37px]">
                         <LogoIcon />
                     </div>
@@ -109,7 +109,7 @@ const HeroSection = () => {
 
                         <div className="flex gap-8 items-center mt-12">
                             <button
-                                className='bg-primary text-white-1 font-semibold text-2xl rounded-[80px] px-12 py-[18px]'
+                                className='bg-primary text-white-1 hover:bg-[#959595] hover:text-primary font-semibold text-2xl rounded-[80px] px-12 py-[18px]'
                             >
                                 Get Started
                             </button>

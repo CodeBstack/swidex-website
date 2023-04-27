@@ -40,7 +40,9 @@ const WhereDoYouFallSection = () => {
                     <p className="font-Lato text-black font-semibold text-2xl xl:text-[34px]">
                         Would you like to start saving effortlessly today?
                     </p>
-                    <button className='self-end rounded-[40px] lg:rounded-[80px] flex gap-2.5 items-center bg-primary py-2 lg:py-4 px-6 lg:px-[54px] text-xl lg:text-2xl text-white'>Yes, I do! <ArrowRightIcon /></button>
+                    <button className='self-end rounded-[40px] lg:rounded-[80px] flex gap-2.5 items-center bg-primary hover:bg-[#959595] hover:text-primary py-2 lg:py-4 px-6 lg:px-[54px] text-xl lg:text-2xl text-white'>
+                        Yes, I do! <ArrowRightIcon />
+                    </button>
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-16 xl:gap-36 2xl:gap-[200px]">
@@ -51,7 +53,7 @@ const WhereDoYouFallSection = () => {
                             and start <span className="font-bold">saving</span> {" "} today<span className="font-bold">!</span>
                         </h3>
                         <button
-                            className='w-fit rounded-[80px] flex gap-2.5 items-center bg-primary py-2.5 lg:py-5 px-7 lg:px-[33px] text-xl md:text-2xl lg:text-[28px] text-white'
+                            className='w-fit rounded-[80px] flex gap-2.5 items-center bg-primary py-2.5 lg:py-5 px-7 lg:px-[33px] text-xl md:text-2xl lg:text-[28px] text-white hover:bg-[#959595] hover:text-primary'
                         >
                             Get mobile app now
                         </button>
