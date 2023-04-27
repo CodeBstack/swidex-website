@@ -5,12 +5,16 @@ import Image from 'next/image'
 const WhatWeOfferSection = () => {
 
     return (
-        <section id='section_2' className='min-h-screen w-full px-[100px] pb-[95px]'>
-            <div className="-mt-[79px] font-Lato  translate-x-[0%] h-[158px] font-semibold text-[34px]  flex justify-center items-center w-full max-w-[987px] mx-auto rounded-[30px] bg-what-we-are-bringing-section bg-cover text-black">
+        <section id='section_2' className='min-h-screen w-full px-4 sm:px-6 md:px-10 xl:px-[100px] pb-[95px]'>
+            <div className="hidden -mt-[79px] font-Lato  translate-x-[0%] h-[158px] font-semibold text-[34px] xl:flex justify-center items-center w-full max-w-[987px] mx-auto rounded-[30px] bg-what-we-are-bringing-section bg-cover text-black">
                 What are we bringing to the table?
             </div>
 
-            <div className="mt-[169px] gap-10 grid grid-cols-2">
+            <p className="pt-7 font-Lato text-2xl sm:text-3xl font-semibold xl:hidden">
+                What are we bringing to the table?
+            </p>
+
+            <div className="mt-[60px] md:mt-[169px] gap-10 grid grid-cols-1 md:grid-cols-2">
                 {staticData.map((data, i) =>
                     <WhatWeOfferCard
                         key={`${data.heading}_${i}`}
@@ -20,18 +24,20 @@ const WhatWeOfferSection = () => {
             </div>
 
 
-            <div className="bg-primary mt-[106px] rounded-[30px] px-[108px] flex gap-[92px]">
-                <div className="w-[425px] h-[579px] self-end">
+            <div className="bg-primary mt-[106px] rounded-xl md:rounded-[30px] px-6 pt-6 flex flex-col-reverse 2xl:flex-row gap-16 2xl:gap-[92px] md:px-10 md:pt-10 2xl:px-[108px] ">
+                <div className="md:w-[425px] md:h-[579px] self-center 2xl:self-end">
                     <img className='w-full h-full' src='/images/mobile_app.png' alt='mobile_app' width={'100%'} height={'100%'} />
-                </div>
+                </div> 
 
 
-                <div className="flex-1 pt-20 pb-12">
-                    <h5 className="font-Lato font-semibold mb-[44px] text-white-1 text-[34px] text-left ">As an agent, all you need to do is:</h5>
+                <div className="flex-1 2xl:pt-20 2xl:pb-12">
+                    <h5 className="font-Lato font-semibold mb-8 md:mb-[44px] text-white-1 text-2xl md:text-[34px] text-left ">
+                        As an agent, all you need to do is:
+                    </h5>
 
-                    <ul className="flex flex-col gap-[60px]">
-                        <li className="flex  gap-6 items-centr font-normal text-[28px] text-white-1">
-                            <div className="flex justify-center items-center rounded-[15px] border border-white-1 w-20 h-[71.11px] font-Lato ">
+                    <ul className="flex flex-col gap-6 md:gap-10 xl:gap-[60px]">
+                        <li className="flex gap-4 font-normal text-base sm:text-xl md:text-2xl lg:text-[28px] text-white-1 md:gap-6">
+                            <div className="flex justify-center items-center rounded-[15px] border border-white-1 p-2 px-4 h-fit w-fiit font-Lato md:p-4 md:px-6">
                                 1
                             </div>
 
@@ -39,8 +45,8 @@ const WhatWeOfferSection = () => {
                                 Invite their customers to download our mobile app and create an account
                             </p>
                         </li>
-                        <li className="flex gap-6 items-cente font-normal text-[28px] text-white-1">
-                            <div className="flex justify-center items-center rounded-[15px] border border-white-1 w-20 h-[71.11px] font-Lato ">
+                        <li className="flex gap-4 font-normal text-base sm:text-xl md:text-2xl lg:text-[28px] text-white-1 md:gap-6">
+                            <div className="flex justify-center items-center rounded-[15px] border border-white-1 p-2 px-4 h-fit w-fiit font-Lato md:p-4 md:px-6">
                                 2
                             </div>
 
@@ -48,8 +54,8 @@ const WhatWeOfferSection = () => {
                                 Once their account is created, customers can access their account dashboard
                             </p>
                         </li>
-                        <li className="flex gap-6 items-cente font-normal text-[28px] text-white-1">
-                            <div className="flex justify-center items-center rounded-[15px] border border-white-1 w-20 h-[71.11px] font-Lato ">
+                        <li className="flex gap-4 font-normal text-base sm:text-xl md:text-2xl lg:text-[28px] text-white-1 md:gap-6">
+                            <div className="flex justify-center items-center rounded-[15px] border border-white-1 p-2 px-4 h-fit w-fiit font-Lato md:p-4 md:px-6">
                                 3
                             </div>
 
@@ -57,8 +63,8 @@ const WhatWeOfferSection = () => {
                                 They can view their transaction history, savings and loan plans, and update their personal information
                             </p>
                         </li>
-                        <li className="flex gap-6 items-cente font-normal text-[28px] text-white-1">
-                            <div className="flex justify-center items-center rounded-[15px] border border-white-1 w-20 h-[71.11px] font-Lato ">
+                        <li className="flex gap-4 font-normal text-base sm:text-xl md:text-2xl lg:text-[28px] text-white-1 md:gap-6">
+                            <div className="flex justify-center items-center rounded-[15px] border border-white-1 p-2 px-4 h-fit w-fiit font-Lato md:p-4 md:px-6">
                                 4
                             </div>
 
