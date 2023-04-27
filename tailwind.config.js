@@ -7,10 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Open: ["Open Sans", "sans-serif"],
+        Lato: ["Lato", "sans-serif"],
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'header-bg': "url('/images/header_bg.png')",
+        'what-we-are-bringing-section': "url('/images/what-are-we-bringing.png')",
+      },
+      colors: {
+        primary: '#223A57',
+        "white-1": '#FFFFFF',
+        positive: '#0EAD69',
+        "grey-1": '#959595',
       },
     },
   },
