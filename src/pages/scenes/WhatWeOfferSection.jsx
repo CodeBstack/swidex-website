@@ -27,7 +27,12 @@ const WhatWeOfferSection = () => {
             {/* </div> */}
 
 
-            <div className="bg-primary mt-[106px] md:rounded-[30px] px-4 sm:px-6 pt-6 flex flex-col-reverse 2xl:flex-row gap-16 2xl:gap-[92px] md:px-10 md:pt-10 2xl:px-[108px] ">
+            <div className="relative bg-primary mt-[106px] md:rounded-[30px] px-4 sm:px-6 pt-6 flex flex-col-reverse 2xl:flex-row gap-16 2xl:gap-[92px] md:px-10 md:pt-10 xl:pt-[220px] 2xl:pt-0 xl:px-[108px] ">
+                <img src="/images/bar-1.png" alt="bar" className="absolute top-0 left-0 hidden xl:block" />
+                <img src="/images/bar-2.png" alt="bar" className="absolute top-0 left-0 hidden xl:block" />
+                <img src="/images/bar-3.png" alt="bar" className="absolute top-0 left-0 hidden xl:block" />
+                <img src="/images/bar-4.png" alt="bar" className="absolute top-0 left-0 hidden xl:block" />
+
                 <div className="md:w-[425px] md:h-[579px] self-center 2xl:self-end">
                     <img className='w-full h-full' src='/images/mobile_app.png' alt='mobile_app' width={'100%'} height={'100%'} />
                 </div>
