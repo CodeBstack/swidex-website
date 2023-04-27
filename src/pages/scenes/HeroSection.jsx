@@ -9,8 +9,9 @@ const HeroSection = () => {
 
     return (
         <>
+            {/* SHOWS ONLY ON SCREENS LOWER THAN 1280PX */}
             <main className="relative h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] xl:hidden">
-                <nav className="sticky w-full top-0 flex justify-between items-center py-[37px]">
+                <nav className="sticky w-full top-0 flex justify-between items-center py-4 lg:py-[37px]">
                     <div className="  flex-1 pt[37px]">
                         <LogoIcon />
                     </div>
@@ -35,39 +36,30 @@ const HeroSection = () => {
                             } `}
                     >
                         <button
-                            className='absolute top-16 right-[5%]'
+                            className='absolute top-12 right-[4.5%]'
                             onClick={() => setIsNavOpened(false)}
                         >
                             <CloseMenuIcon />
                         </button>
 
-                        <div className="w-full flex mt-[104px] mb-12 gap-6 flex-col text-center">
+                        <div className="w-full flex mt-[200px] text-xl text-white-1 mb12 gap-6 flex-col text-center">
+                            {NavLinks.map((navlink, i) => (
+                                <a
+                                    key={i}
+                                    className="hover:bg-white hover:text-primary py-2 rounded-[8px]"
+                                    href='#'
 
-                            {/* {NavLinks.map((navlink, i) => (
-            <AnchorLink
-              key={i}
-              className="hover:bg-primary py-2 rounded-[8px]"
-              href={`#${navlink.text.toLocaleLowerCase()}`}
-              onClick={() => {
-                setSelectedPage(
-                  navlink.text.toLocaleLowerCase()
-                );
-                setIsNavOpened(false);
-              }}
-            >
-              <p className="text-secondary mb-[4px]">
-                {navlink.pos}
-              </p>
-              <p>{navlink.text}</p>
-            </AnchorLink>
-          ))} */}
+                                >
+                                    <span className=''>{navlink.title}</span>
+                                </a>
+                            ))}
                         </div>
 
                     </aside>
                 </nav>
 
                 <div className="">
-                    <div className="text">
+                    <div className="text mt-8">
                         <h2 className="font-bold text-3xl sm:text-5xl lg:leading-[80px] lg:text-[54px] text-black max-w-[687px]">
                             We give agents and their clients {" "}
                             <span className="text-positive">access</span>  {" "}
@@ -81,23 +73,22 @@ const HeroSection = () => {
 
                         <div className="flex gap-8 items-center mt-12">
                             <button
-                                className='bg-primary text-white-1 font-semibold text-2xl rounded-[80px] px-12 py-[18px]'
+                                className='bg-primary text-white-1 hover:bg-[#959595] hover:text-primary font-semibold text-base sm:text-xl md:text-2xl rounded-[80px] px-6 md:px-12 py-3 md:py-[18px]'
                             >
                                 Get Started
                             </button>
 
                             <a
                                 href="#section_2"
-                                className=" hover:animate-bounce flex gap-2 items-center text-black text-2xl"
+                                className=" hover:animate-bounce flex gap-2 items-center text-black text-xl md:text-2xl"
                             >Scroll Down <ScrollDownIcon />
                             </a>
                         </div>
                     </div>
                 </div>
-
-
             </main>
 
+            {/* SHOWS ONLY ON SCREENS LARGER THAN 1280PX */}
             <main className='hidden xl:flex '>
                 <div className="flex flex-col justify-center relative pl-4 sm:pl-6 md:pl-10 xl:pl-[100px] h-screen w-[65%] bg-header-bg bg-cover bg-no-repeat">
                     <div className=" absolute top-[37px]">
@@ -148,3 +139,10 @@ const HeroSection = () => {
 }
 
 export default HeroSection
+
+
+const NavLinks = [
+    { id: 1, title: 'About Us' },
+    { id: 2, title: 'Features' },
+    { id: 3, title: 'Contact Us' },
+]

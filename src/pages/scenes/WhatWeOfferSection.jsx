@@ -70,7 +70,7 @@ const WhatWeOfferSection = () => {
 
                             <p className="font-Open max-w-[690px]">
                                 Customers can use our mobile app to make transactions, such as; <br />
-                                <ul className="pl-10  my-2">
+                                <ul className="pl-6 lg:pl-10  my-2">
                                     <li className="list-disc">
                                         Depositing or withdrawing money from their account
                                     </li>
