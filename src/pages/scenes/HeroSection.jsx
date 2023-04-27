@@ -89,8 +89,8 @@ const HeroSection = () => {
             </main>
 
             {/* SHOWS ONLY ON SCREENS LARGER THAN 1280PX */}
-            <main className='hidden xl:flex pb-20'>
-                <div className="flex flex-col justify-center relative pl-4 sm:pl-6 md:pl-10 xl:pl-[100px] min-h-screen w-[65%] bg-header-bg bg-cover bg-no-repeat">
+            <main className='hidden xl:flex '>
+                <div className="pb-20 flex flex-col justify-center relative pl-4 sm:pl-6 md:pl-10 xl:pl-[100px] min-h-screen w-[65%] bg-header-bg bg-cover bg-no-repeat">
                     <div className=" absolute top-[37px]">
                         <LogoIcon />
                     </div>
@@ -123,7 +123,7 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className="w-[35%] bg-primary">
+                <div className="w-[35%] bg-primary pb-20">
                     <div className="flex justify-evenly items-center pt-[51px] pb-[46px]">
                         <a href='#' className="text-2xl font-medium text-white-1">About</a>
                         <a href='#' className="text-2xl font-medium text-white-1">Features</a>

@@ -6,7 +6,7 @@ const WhatWeOfferSection = () => {
 
     return (
         <section id='section_2' className='min-h-screen w-full  md:px-10 xl:px-[100px] pb-[95px]'>
-            <div className="px-4 sm:px-6">
+            {/* <div className="px-4 sm:px-6"> */}
 
                 <div className="hidden -mt-[79px] font-Lato  translate-x-[0%] h-[158px] font-semibold text-[34px] xl:flex justify-center items-center w-full max-w-[987px] mx-auto rounded-[30px] bg-what-we-are-bringing-section bg-cover text-black">
                     What are we bringing to the table?
@@ -24,7 +24,7 @@ const WhatWeOfferSection = () => {
                         />
                     )}
                 </div>
-            </div>
+            {/* </div> */}
 
 
             <div className="bg-primary mt-[106px] md:rounded-[30px] px-4 sm:px-6 pt-6 flex flex-col-reverse 2xl:flex-row gap-16 2xl:gap-[92px] md:px-10 md:pt-10 2xl:px-[108px] ">
