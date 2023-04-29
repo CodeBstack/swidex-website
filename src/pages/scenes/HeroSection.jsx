@@ -90,7 +90,7 @@ const HeroSection = () => {
 
                         <div className="flex gap-8 items-center mt-12">
                             <button
-                                className='bg-primary text-white-1 hover:bg-[#959595] hover:text-primary font-semibold text-base sm:text-xl md:text-2xl rounded-[80px] px-6 md:px-12 py-3 md:py-[18px]'
+                                className='bg-primary transition-all duration-200 text-white-1 hover:bg-[#959595] hover:text-primary font-semibold text-base sm:text-xl md:text-2xl rounded-[80px] px-6 md:px-12 py-3 md:py-[18px]'
                             >
                                 Get Started
                             </button>
@@ -150,7 +150,7 @@ const HeroSection = () => {
 
                         <div className="flex gap-8 items-center mt-12">
                             <button
-                                className='bg-primary text-white-1 hover:bg-[#959595] hover:text-primary font-semibold text-2xl rounded-[80px] px-12 py-[18px]'
+                                className='bg-primary transition-all duration-200 text-white-1 hover:bg-[#959595] hover:text-primary font-semibold text-2xl rounded-[80px] px-12 py-[18px]'
                             >
                                 Get Started
                             </button>
