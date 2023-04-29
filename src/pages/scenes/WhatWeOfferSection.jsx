@@ -15,7 +15,7 @@ const WhatWeOfferSection = () => {
                     What are we bringing to the table?
                 </p>
 
-                <div className="mt-[60px] md:mt-[169px] gap-10 grid grid-cols-1 md:grid-cols-2">
+                <div className="mt-[60px] xl:mt-[169px] gap-10 grid grid-cols-1 md:grid-cols-2">
                     {staticData.map((data, i) =>
                         <WhatWeOfferCard
                             key={`${data.heading}_${i}`}
