@@ -12,15 +12,15 @@ const HeroSection = () => {
     return (
         <>
             {/* SHOWS ONLY ON SCREENS LOWER THAN 1280PX */}
-            <main className="min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
+            <main className="h-4/5 md:min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
                 <nav className="sticky w-full top-0 flex justify-between items-center py-4 lg:py-[37px]">
                     <div className="  flex-1 pt[37px]">
                         <LogoIcon />
                     </div>
                     <div className="flex-1 hidden md:flex justify-between  pt[51px] pb[46px] ">
-                        <a href='#' className="text-2xl font-medium text-primary">About</a>
-                        <a href='#' className="text-2xl font-medium text-primary">Features</a>
-                        <a href='#' className="text-2xl font-medium text-primary">Contact Us</a>
+                        <a href='#' className="text-base md:text-xl font-medium text-primary">About</a>
+                        <a href='#' className="text-base md:text-xl font-medium text-primary">Features</a>
+                        <a href='#' className="text-base md:text-xl font-medium text-primary">Contact Us</a>
                     </div>
 
                     <button
@@ -44,7 +44,7 @@ const HeroSection = () => {
                             <CloseMenuIcon />
                         </button>
 
-                        <div className="w-full flex mt-[200px] text-xl text-white-1 mb12 gap-6 flex-col text-center">
+                        <div className="w-full flex mt-[200px] text-base text-white-1 mb12 gap-6 flex-col text-center">
                             {NavLinks.map((navlink, i) => (
                                 <a
                                     key={i}
@@ -60,33 +60,20 @@ const HeroSection = () => {
                     </aside>
                 </nav>
 
-                <div className="flex flex-col lg:flex-row">
+                <div className="flex flex-col mt-8 mb-20 lg:flex-row">
                     <div className="text mt-8 flex-1">
-                        <h2 className="font-bold text-[30px] sm:text-[48px] leading-[40px] sm:leading-[56px] lgtext-[54px] text-black w-full max-w-[687px]">
+                        <h2 className="font-bold text-2xl sm:text-[48px] leading-[40px] sm:leading-[56px] lgtext-[54px] text-black w-full max-w-[687px]">
                             We give agents and their clients {" "}
                             <span className="text-positive">access</span>  {" "}
                             to  {" "} <span className="text-positive">digital</span>  {" "}
                             financial  {" "}
                             <span className="text-positive">services</span>
                         </h2>
-                        <p className="font-normal text-2xl mt-6 text-black font-Open">
+                        <p className="font-normal text-base md:text-2xl mt-3 md:mt-6 text-black font-Open">
                             Never spend your money before you’ve earned it
                         </p>
 
-                        <div className="mt-8  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:hidden">
-                            <p className="font-medium max-w-[300px] rounded-2xl shadow-lg bg-primay  p-4 text-xl ">
-                                By automating manual processes, expanding customer reach
-                            </p>
-
-
-                            <p className="font-medium max-w-[300px] rounded-2xl shadow-lg bg-primay  p-4  text-xl ">
-                                Ensuring transparency and accountability in financial transactions
-                            </p>
-
-                            <p className="font-medium max-w-[300px] rounded-2xl shadow-lg bg-primay  p-4  text-xl ">
-                                If you would be wealthy, think of saving as well as getting
-                            </p>
-                        </div>
+                       
 
                         <div className="flex gap-8 items-center mt-12">
                             <button
@@ -150,7 +137,7 @@ const HeroSection = () => {
 
                         <div className="flex gap-8 items-center mt-12">
                             <button
-                                className='bg-primary transition-all duration-200 text-white-1 hover:bg-[#959595] hover:text-primary font-semibold text-2xl rounded-[80px] px-12 py-[18px]'
+                                className='bg-primary transition-all duration-200 text-white-1 hover:bg-[#072a56] hover:textprimary font-semibold text-2xl rounded-[80px] px-12 py-[18px]'
                             >
                                 Get Started
                             </button>
@@ -166,9 +153,9 @@ const HeroSection = () => {
 
                 <div className="w-[35%] bg-primary pb-[255px] ">
                     <div className="flex justify-evenly items-center pt-[51px] pb-[46px]">
-                        <a href='#' className="text-2xl font-medium text-white-1">About</a>
-                        <a href='#' className="text-2xl font-medium text-white-1">Features</a>
-                        <a href='#' className="text-2xl font-medium text-white-1">Contact Us</a>
+                        <a href='#' className="text-xl font-medium text-white-1">About</a>
+                        <a href='#' className="text-xl font-medium text-white-1">Features</a>
+                        <a href='#' className="text-xl font-medium text-white-1">Contact Us</a>
                     </div>
 
                     <div className="relative flex flex-col h-full justify-center items-center">

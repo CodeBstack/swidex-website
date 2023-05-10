@@ -6,7 +6,7 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-   
+
     extend: {
       fontFamily: {
         Open: ["Open Sans", "sans-serif"],
@@ -15,6 +15,7 @@ module.exports = {
       backgroundImage: {
         'header-bg': "url('/images/header_bg.png')",
         'what-we-are-bringing-section': "url('/images/what-are-we-bringing.png')",
+        'download-bg': "url('/images/download_bg.png')"
       },
       colors: {
         primary: '#223A57',

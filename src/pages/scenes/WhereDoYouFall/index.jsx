@@ -40,26 +40,26 @@ const WhereDoYouFallSection = () => {
                     <p className="font-Lato text-black font-semibold text-2xl xl:text-[34px]">
                         Would you like to start saving effortlessly today?
                     </p>
-                    <button className='transition-all duration-200 self-end rounded-[40px] lg:rounded-[80px] flex gap-2.5 items-center bg-primary hover:bg-[#959595] hover:text-primary py-2 lg:py-4 px-6 lg:px-[54px] text-xl lg:text-2xl text-white'>
+                    <button className='transition-all duration-200 self-end rounded-[40px] lg:rounded-[80px] flex gap-2.5 items-center bg-primary hover:bg-[#072a56] hover:textprimary py-2 lg:py-4 px-6 lg:px-[54px] text-base lg:text-2xl text-white'>
                         Yes, I do! <ArrowRightIcon />
                     </button>
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-16 xl:gap-36 2xl:gap-[200px]">
-                    <div className="bg-[#C3E0FE] self-center flex flex-col justify-center max-w-[700px] 2xl:max-w-[831px] max-h-[564px] p-6 sm:p-10 md:p-16 xl:px-[84px] rounded-2xl md:rounded-[30px]">
+                    <div className="bg-download-bg self-center flex flex-col justify-center max-w-[700px] 2xl:max-w-[831px] h-[380px] lg:h-[564px] p-6 sm:p-10 md:p-16 xl:px-[84px] rounded-2xl md:rounded-[30px]">
                         <h3 className="font-normal text-2xl md:text-3xl lg:text-[42px] text-black mb-10">
                             <span className="font-bold">Download</span> {" "}
                             our <span className="font-bold">mobile app </span> {" "}
                             and start <span className="font-bold">saving</span> {" "} today<span className="font-bold">!</span>
                         </h3>
                         <button
-                            className='transition-all duration-200 w-fit rounded-[80px] flex gap-2.5 items-center bg-primary py-2.5 lg:py-5 px-7 lg:px-[33px] text-xl md:text-2xl lg:text-[28px] text-white hover:bg-[#959595] hover:text-primary'
+                            className='transition-all duration-200 w-fit rounded-[80px] flex gap-2.5 items-center bg-primary py-2.5 lg:py-5 px-7 lg:px-[33px] text-base md:text-xl mdtext-2xl lg:text-[28px] text-white hover:bg-[#959595] hover:text-primary'
                         >
                             Get mobile app now
                         </button>
                     </div>
 
-                    <div className="flex-1  h-[550px] self-center xl:self-end">
+                    <div className="flex-1  h-[550px] w-full self-center xl:self-end">
                         <img className='w-[460px] h-full' src='/images/mobile_app_3.png' alt='mobile_app' width={'100%'} height={'100%'} />
                     </div>
                 </div>
