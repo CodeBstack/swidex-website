@@ -53,7 +53,7 @@ const WhereDoYouFallSection = () => {
                             and start <span className="font-bold">saving</span> {" "} today<span className="font-bold">!</span>
                         </h3>
                         <button
-                            className='transition-all duration-200 w-fit rounded-[80px] flex gap-2.5 items-center bg-primary py-2.5 lg:py-5 px-7 lg:px-[33px] text-base md:text-xl mdtext-2xl lg:text-[28px] text-white hover:bg-[#959595] hover:text-primary'
+                            className='transition-all duration-200 w-fit rounded-[80px] flex gap-2.5 items-center bg-primary py-2.5 lg:py-5 px-7 lg:px-[33px] text-base md:text-xl mdtext-2xl lg:text-[28px] text-white hover:bg-[#072a56] hover:textprimary'
                         >
                             Get mobile app now
                         </button>
