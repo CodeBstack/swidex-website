@@ -15,7 +15,7 @@ const HeroSection = () => {
             <main className="h-4/5 md:min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
                 <nav className="sticky w-full top-0 flex justify-between items-center py-4 lg:py-[37px]">
                     <div className="  flex-1 pt[37px]">
-                        <LogoIcon />
+                        <LogoIcon width={'60'} height={'60'}/>
                     </div>
                     <div className="flex-1 hidden md:flex justify-between  pt[51px] pb[46px] ">
                         <a href='#' className="text-base md:text-xl font-medium text-primary">About</a>
@@ -50,7 +50,7 @@ const HeroSection = () => {
                                     key={i}
                                     className="hover:bg-white hover:text-primary py-2 rounded-[8px]"
                                     href='#'
-
+                                    onClick={() => setIsNavOpened(false)}
                                 >
                                     {navlink.title}
                                 </a>
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 </nav>
 
                 <div className="flex flex-col mt-8 mb-20 lg:flex-row">
-                    <div className="text mt-8 flex-1">
+                    <div className="text mt8 flex-1">
                         <h2 className="font-bold text-2xl sm:text-[48px] leading-[40px] sm:leading-[56px] lgtext-[54px] text-black w-full max-w-[687px]">
                             We give agents and their clients {" "}
                             <span className="text-positive">access</span>  {" "}
@@ -73,18 +73,18 @@ const HeroSection = () => {
                             Never spend your money before you’ve earned it
                         </p>
 
-                       
+
 
                         <div className="flex gap-8 items-center mt-12">
                             <button
-                                className='bg-primary transition-all duration-200 text-white-1 hover:bg-[#959595] hover:text-primary font-semibold text-base sm:text-xl md:text-2xl rounded-[80px] px-6 md:px-12 py-3 md:py-[18px]'
+                                className='bg-primary transition-all duration-200 text-white-1 hover:bg-[#072a56] hover:textprimary font-semibold text-sm sm:text-base md:text-2xl rounded-[80px] px-3 md:px-12 py-1 md:py-[18px]'
                             >
                                 Get Started
                             </button>
 
                             <a
                                 href="#section_2"
-                                className=" hover:animate-bounce flex gap-2 items-center text-black text-xl md:text-2xl"
+                                className=" hover:animate-bounce flex gap-2 items-center text-black text-base md:text-xl"
                             >Scroll Down <ScrollDownIcon />
                             </a>
                         </div>
