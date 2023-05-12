@@ -85,7 +85,7 @@ const HeroSection = () => {
                             <a
                                 href="#section_2"
                                 className=" hover:animate-bounce flex gap-2 items-center text-black text-base md:text-xl"
-                            >Scroll Down <ScrollDownIcon />
+                            >Scroll Down <ScrollDownIcon width={'16'} height={'14'}/>
                             </a>
                         </div>
                     </div>

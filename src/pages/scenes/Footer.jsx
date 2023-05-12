@@ -4,7 +4,7 @@ import LogoIcon2 from '../../components/Vectors/LogoIcon2'
 
 const Footer = () => {
     return (
-        <section className="px-4 sm:px-6 md:px-10 xl:px-[100px] py-10 gap-10 flex flex-col xl:flex-row xl:justify-between lg:py-[62px]">
+        <section className="px-4 sm:px-6 md:px-10 xl:px-[100px] py-10 mt-10 gap-10 flex flex-col xl:flex-row xl:justify-between lg:py-[62px]">
             <div className="flex-1 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-[53px] ">
                 <div className="xl:hidden">
                     <LogoIcon width={'60'} height={'60'}/>
