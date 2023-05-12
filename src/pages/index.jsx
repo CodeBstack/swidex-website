@@ -15,7 +15,7 @@ import Link from "next/link";
 export default function Home() {
   const [isNavOpened, setIsNavOpened] = useState(false)
   const [navBg, setNavBg] = useState(false);
-  
+
   useEffect(() => {
     const handleScrollButtonVisibility = () => {
       window.pageYOffset > 300
@@ -38,11 +38,17 @@ export default function Home() {
 
   return (
     <div className="max-w-[1750px] mx-auto">
-      <nav className={`xl:hidden fixed px-4 sm:px-6 md:px-10 xl:px-[100px] transition-all duration-300 ease-in ${navBg && 'bg-[#ffffff] shadow'} z-[10] w-full top-0 flex justify-between items-center py-3 md:py-4 lg:py-[24px]`}>
-        <Link href='/' className="  flex-1 pt[37px]">
+      <div
+        className={`overlay z-[99] fixed top-0 left-0 h-screen w-full ${isNavOpened ? 'block ' : 'hidden'
+          }`}
+        onClick={() => setIsNavOpened(false)}
+      ></div>
+
+      <nav className={`xl:hidden fixed px-4 sm:px-6 md:px-10 xl:px-[100px] transition-all duration-300 ease-in ${navBg && 'bg-[#ffffff] shadow'} z-[100] w-full top-0 flex justify-between items-center py-3 md:py-4 lg:py-[24px]`}>
+        <Link href='/' className=" z-[100] flex1 pt[37px]">
           <LogoIcon width={'60'} height={'60'} />
         </Link>
-        <div className="flex-1 hidden md:flex justify-between  pt[51px] pb[46px] ">
+        <div className="flex-1 hidden text-base lg:text-lg md:flex justify-between  pt[51px] pb[46px] ">
           <a href='#' className="text-base md:text-xl font-medium text-primary">About</a>
           <a href='#' className="text-base md:text-xl font-medium text-primary">Features</a>
           <a href='#' className="text-base md:text-xl font-medium text-primary">Contact Us</a>
@@ -57,7 +63,7 @@ export default function Home() {
 
         {/* MOBILE NAV SIDEBAR */}
         <aside
-          className={`flex md:hidden px-[7%] transition-all duration-500 flex-col items-center z-[999] fixed top-0 h-screen bg-primary ${isNavOpened
+          className={`flex z-[1000] md:hidden px-[7%] transition-all duration-500 flex-col items-center z-999] fixed top-0 h-screen bg-primary ${isNavOpened
             ? 'right-0 w-[70%]'
             : '-right-[100vw]'
             } `}

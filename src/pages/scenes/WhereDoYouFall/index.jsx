@@ -46,7 +46,7 @@ const WhereDoYouFallSection = () => {
                 </div>
 
                 <div className="flex-1 flex flex-col xl:flex-row gap-16 xl:gap-36 2xl:gap-[200px]">
-                    <div className="bg-download-bg self-center flex flex-col justify-center max-w-[700px] 2xl:max-w-[831px] h-[380px] lg:h-[564px] p-6 sm:p-10 md:p-16 xl:px-[84px] rounded-2xl md:rounded-[30px]">
+                    <div className="bg-download-bg bg-contain self-center flex flex-col justify-center max-w-[700px] 2xl:max-w-[831px] h-[380px] lg:h-[564px] p-6 sm:p-10 md:p-16 xl:px-[84px] rounded-2xl md:rounded-[30px]">
                         <h3 className="font-normal text-2xl md:text-3xl lg:text-[42px] text-black mb-10">
                             <span className="font-bold">Download</span> {" "}
                             our <span className="font-bold">mobile app </span> {" "}
