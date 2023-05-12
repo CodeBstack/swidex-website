@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <div className="max-w-[1750px] mx-auto">
-      <nav className={`xl:hidden fixed px-4 sm:px-6 md:px-10 xl:px-[100px] ${navBg && 'bg-[#ffffff] shadow'} z-[10] w-full top-0 flex justify-between items-center py-3 md:py-4 lg:py-[24px]`}>
+      <nav className={`xl:hidden fixed px-4 sm:px-6 md:px-10 xl:px-[100px] transition-all duration-300 ease-in ${navBg && 'bg-[#ffffff] shadow'} z-[10] w-full top-0 flex justify-between items-center py-3 md:py-4 lg:py-[24px]`}>
         <Link href='/' className="  flex-1 pt[37px]">
           <LogoIcon width={'60'} height={'60'} />
         </Link>
@@ -63,7 +63,7 @@ export default function Home() {
             } `}
         >
           <button
-            className='absolute top-12 right-[4.5%]'
+            className='absolute top-9 right-[4.5%]'
             onClick={() => setIsNavOpened(false)}
           >
             <CloseMenuIcon />

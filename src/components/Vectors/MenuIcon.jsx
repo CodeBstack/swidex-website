@@ -4,7 +4,7 @@ const MenuIcon = () => {
     return (
         <>
             <svg
-                width="31"
+                width="25"
                 height="19"
                 viewBox="0 0 31 19"
                 fill="none"
