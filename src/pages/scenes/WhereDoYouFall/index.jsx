@@ -36,8 +36,8 @@ const WhereDoYouFallSection = () => {
 
 
             <div className="mt-[100px] xl:mt-[212px] flex flex-col">
-                <div className="flex flex-col lg:flex-row gap-6 items-center mx-auto mb-20 lg:mb-[162px]">
-                    <p className="font-Lato text-black font-semibold text-2xl xl:text-[34px]">
+                <div className="flex flex-col lg:flex-row gap-6 items-center mx-auto mb-10 lg:mb-[162px]">
+                    <p className="font-Lato text-black font-semibold text-xl md:text-2xl xl:text-[34px]">
                         Would you like to start saving effortlessly today?
                     </p>
                     <button className='transition-all duration-200 self-end rounded-[40px] lg:rounded-[80px] flex gap-2.5 items-center bg-primary hover:bg-[#072a56] hover:textprimary py-2 lg:py-4 px-6 lg:px-[54px] text-base lg:text-2xl text-white'>
@@ -45,7 +45,7 @@ const WhereDoYouFallSection = () => {
                     </button>
                 </div>
 
-                <div className="flex-1 flex flex-col  xl:flex-row gap-16 xl:gap-36 2xl:gap-[200px]">
+                <div className="flex-1 flex flex-col xl:flex-row gap-16 xl:gap-36 2xl:gap-[200px]">
                     <div className="bg-download-bg self-center flex flex-col justify-center max-w-[700px] 2xl:max-w-[831px] h-[380px] lg:h-[564px] p-6 sm:p-10 md:p-16 xl:px-[84px] rounded-2xl md:rounded-[30px]">
                         <h3 className="font-normal text-2xl md:text-3xl lg:text-[42px] text-black mb-10">
                             <span className="font-bold">Download</span> {" "}

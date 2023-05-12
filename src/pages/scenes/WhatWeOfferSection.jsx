@@ -29,7 +29,7 @@ const WhatWeOfferSection = () => {
                     What are we bringing to the table?
                 </p>
 
-                <div className="mt-[60px] xl:mt-[169px] gap-10 grid grid-cols-1 md:grid-cols-2">
+                <div className="mt-6 lg:mt-[60px] xl:mt-[169px] gap-5 lg:gap-10 grid grid-cols-1 md:grid-cols-2">
                     {staticData.map((data, i) =>
                         <WhatWeOfferCard
                             key={`${data.heading}_${i}`}
@@ -57,7 +57,7 @@ const WhatWeOfferSection = () => {
                     </h5>
 
                     <ul className="flex flex-col gap-6 md:gap-10 xl:gap-[60px]">
-                        <li className="flex gap-4 font-normal text-base sm:text-xl  lg:text-[28px] text-white-1 md:gap-6">
+                        <li className="flex gap-2 sm:gap-4 font-normal text-base sm:text-xl  lg:text-[28px] text-white-1 md:gap-6">
                             <div className="flex justify-center items-center rounded-[15px] border border-white-1 p-1 px-2 h-fit w-fiit font-Lato md:p-4 md:px-6">
                                 1
                             </div>
@@ -66,7 +66,7 @@ const WhatWeOfferSection = () => {
                                 Invite their customers to download our mobile app and create an account
                             </p>
                         </li>
-                        <li className="flex gap-4 font-normal text-base sm:text-xl  lg:text-[28px] text-white-1 md:gap-6">
+                        <li className="flex gap-2 sm:gap-4 font-normal text-base sm:text-xl  lg:text-[28px] text-white-1 md:gap-6">
                             <div className="flex justify-center items-center rounded-[15px] border border-white-1 p-1 px-2 h-fit w-fiit font-Lato md:p-4 md:px-6">
                                 2
                             </div>
@@ -75,7 +75,7 @@ const WhatWeOfferSection = () => {
                                 Once their account is created, customers can access their account dashboard
                             </p>
                         </li>
-                        <li className="flex gap-4 font-normal text-base sm:text-xl  lg:text-[28px] text-white-1 md:gap-6">
+                        <li className="flex gap-2 sm:gap-4 font-normal text-base sm:text-xl  lg:text-[28px] text-white-1 md:gap-6">
                             <div className="flex justify-center items-center rounded-[15px] border border-white-1 p-1 px-2 h-fit w-fiit font-Lato md:p-4 md:px-6">
                                 3
                             </div>
@@ -84,7 +84,7 @@ const WhatWeOfferSection = () => {
                                 They can view their transaction history, savings and loan plans, and update their personal information
                             </p>
                         </li>
-                        <li className="flex gap-4 font-normal text-base sm:text-xl  lg:text-[28px] text-white-1 md:gap-6">
+                        <li className="flex gap-2 sm:gap-4 font-normal text-base sm:text-xl  lg:text-[28px] text-white-1 md:gap-6">
                             <div className="flex justify-center items-center rounded-[15px] border border-white-1 p-1 px-2 h-fit w-fiit font-Lato md:p-4 md:px-6">
                                 4
                             </div>
