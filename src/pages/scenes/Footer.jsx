@@ -1,18 +1,19 @@
 import React from 'react'
 import LogoIcon from '../../components/Vectors/LogoIcon'
 import LogoIcon2 from '../../components/Vectors/LogoIcon2'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
         <section className="px-4 sm:px-6 md:px-10 xl:px-[100px] py-10 mt-10 gap-10 flex flex-col xl:flex-row xl:justify-between lg:py-[62px]">
             <div className="flex-1 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-[53px] ">
-                <div className="xl:hidden">
-                    <LogoIcon width={'60'} height={'60'}/>
-                </div>
+                <Link href='/' className="xl:hidden">
+                    <LogoIcon width={'60'} height={'60'} />
+                </Link>
 
-                <div className="hidden xl:block">
+                <Link href={'/'} className="hidden xl:block">
                     <LogoIcon2 />
-                </div>
+                </Link>
 
                 <p className="flex-1 max-w-[387px] font-Open text-base md:text-xl xl:text-2xl text-black font-normal">
                     We serve as a bridge between Ajo agents and their customers, providing a digital platform for managing financial transactions and promoting financial inclusion in underserved communities

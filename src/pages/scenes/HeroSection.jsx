@@ -5,6 +5,7 @@ import ScrollDownIcon from '../../components/Vectors/ScrollDownIcon';
 import CloseMenuIcon from '../../components/Vectors/CloseMenuIcon';
 import MenuIcon from '../../components/Vectors/MenuIcon';
 import LogoIcon2 from '../../components/Vectors/LogoIcon2';
+import Link from 'next/link';
 
 const HeroSection = () => {
     const [isNavOpened, setIsNavOpened] = useState(false)
@@ -14,9 +15,9 @@ const HeroSection = () => {
             {/* SHOWS ONLY ON SCREENS LOWER THAN 1280PX */}
             <main className="h-4/5 md:min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
                 <nav className="sticky w-full top-0 flex justify-between items-center py-4 lg:py-[37px]">
-                    <div className="  flex-1 pt[37px]">
+                    <Link href='/' className="  flex-1 pt[37px]">
                         <LogoIcon width={'60'} height={'60'}/>
-                    </div>
+                    </Link>
                     <div className="flex-1 hidden md:flex justify-between  pt[51px] pb[46px] ">
                         <a href='#' className="text-base md:text-xl font-medium text-primary">About</a>
                         <a href='#' className="text-base md:text-xl font-medium text-primary">Features</a>
@@ -119,9 +120,9 @@ const HeroSection = () => {
             {/* SHOWS ONLY ON SCREENS LARGER THAN 1280PX */}
             <main className='hidden xl:flex '>
                 <div className="pb-20 flex flex-col justify-center relative pl-4 sm:pl-6 md:pl-10 xl:pl-[100px] min-h-screen w-[65%] bg-header-bg bg-cover bg-no-repeat">
-                    <div className="absolute top-[37px]">
+                    <Link href={'/'} className="absolute top-[37px]">
                         <LogoIcon2 />
-                    </div>
+                    </Link>
 
                     <div className="text">
                         <h2 className="font-bold text-[54px] text-black max-w-[687px]">
