@@ -8,60 +8,14 @@ import LogoIcon2 from '../../components/Vectors/LogoIcon2';
 import Link from 'next/link';
 
 const HeroSection = () => {
-    const [isNavOpened, setIsNavOpened] = useState(false)
 
     return (
         <>
             {/* SHOWS ONLY ON SCREENS LOWER THAN 1280PX */}
-            <main className="h-4/5 md:min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
-                <nav className="sticky w-full top-0 flex justify-between items-center py-4 lg:py-[37px]">
-                    <Link href='/' className="  flex-1 pt[37px]">
-                        <LogoIcon width={'60'} height={'60'}/>
-                    </Link>
-                    <div className="flex-1 hidden md:flex justify-between  pt[51px] pb[46px] ">
-                        <a href='#' className="text-base md:text-xl font-medium text-primary">About</a>
-                        <a href='#' className="text-base md:text-xl font-medium text-primary">Features</a>
-                        <a href='#' className="text-base md:text-xl font-medium text-primary">Contact Us</a>
-                    </div>
+            <main className="h-[85vh] md:min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
+                
 
-                    <button
-                        className='flex md:hidden'
-                        onClick={() => setIsNavOpened(true)}
-                    >
-                        <MenuIcon />
-                    </button>
-
-                    {/* MOBILE NAV SIDEBAR */}
-                    <aside
-                        className={`flex md:hidden px-[7%] transition-all duration-500 flex-col items-center z-[999] fixed top-0 h-screen bg-primary ${isNavOpened
-                            ? 'right-0 w-[70%]'
-                            : '-right-[100vw]'
-                            } `}
-                    >
-                        <button
-                            className='absolute top-12 right-[4.5%]'
-                            onClick={() => setIsNavOpened(false)}
-                        >
-                            <CloseMenuIcon />
-                        </button>
-
-                        <div className="w-full flex mt-[200px] text-base text-white-1 mb12 gap-6 flex-col text-center">
-                            {NavLinks.map((navlink, i) => (
-                                <a
-                                    key={i}
-                                    className="hover:bg-white hover:text-primary py-2 rounded-[8px]"
-                                    href='#'
-                                    onClick={() => setIsNavOpened(false)}
-                                >
-                                    {navlink.title}
-                                </a>
-                            ))}
-                        </div>
-
-                    </aside>
-                </nav>
-
-                <div className="flex flex-col mt-8 mb-20 lg:flex-row">
+                <div className="flex flex-col justify-center lg:items-center pt-32 pb-20 lg:flex-row">
                     <div className="text mt8 flex-1">
                         <h2 className="font-bold text-2xl sm:text-[48px] leading-[40px] sm:leading-[56px] lgtext-[54px] text-black w-full max-w-[687px]">
                             We give agents and their clients {" "}
@@ -195,8 +149,3 @@ const HeroSection = () => {
 export default HeroSection
 
 
-const NavLinks = [
-    { id: 1, title: 'About Us' },
-    { id: 2, title: 'Features' },
-    { id: 3, title: 'Contact Us' },
-]

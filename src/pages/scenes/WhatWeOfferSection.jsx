@@ -10,17 +10,17 @@ const WhatWeOfferSection = () => {
                 <div className="hidden -mt-[79px] font-Lato translate-x-[0%] h-[158px] font-semibold text-[34px] xl:flex justify-center items-center w-full max-w-[987px] mx-auto rounded-[30px] bg-what-we-are-bringing-section bg-cover text-black">
                     What are we bringing to the table?
                 </div>
-                <div className="my-8 grid grid-cols-1 sm:grid-cols-2 mb-4 md:grid-cols-3 gap-5 lg:hidden">
-                    <p className="font-medium max-w-[300px] rounded-lg shadow bg-primay  p-4 text-base md:text-xl ">
+                <div className="my-8 grid grid-cols-2 sm:grid-cols-2 mb-4 md:grid-cols-3 gap-2.5 sm:gap-5 lg:hidden">
+                    <p className="font-medium max-w[300px] rounded-lg shadow bg-primay p-2.5 sm:p-4 text-base md:text-xl ">
                         By automating manual processes, expanding customer reach
                     </p>
 
 
-                    <p className="font-medium max-w-[300px] rounded-lg shadow bg-primay  p-4 text-base md:text-xl ">
+                    <p className="font-medium max-w[300px] rounded-lg shadow bg-primay p-2.5 sm:p-4 text-base md:text-xl ">
                         Ensuring transparency and accountability in financial transactions
                     </p>
 
-                    <p className="font-medium max-w-[300px] rounded-lg shadow bg-primay  p-4 text-base md:text-xl ">
+                    <p className="font-medium max-w[300px] rounded-lg shadow bg-primay p-2.5 sm:p-4 text-base md:text-xl ">
                         If you would be wealthy, think of saving as well as getting
                     </p>
                 </div>
