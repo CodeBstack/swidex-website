@@ -39,8 +39,7 @@ export default function Home() {
   return (
     <div className="max-w-[1750px] mx-auto">
       <div
-        className={`overlay z-[99] fixed top-0 left-0 h-screen w-full ${isNavOpened ? 'block ' : 'hidden'
-          }`}
+        className={`overlay z-[99] fixed top-0 left-0 h-screen w-full ${isNavOpened ? 'block ' : 'hidden'}`}
         onClick={() => setIsNavOpened(false)}
       ></div>
 
