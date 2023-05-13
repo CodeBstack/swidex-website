@@ -12,11 +12,11 @@ const HeroSection = () => {
     return (
         <>
             {/* SHOWS ONLY ON SCREENS LOWER THAN 1280PX */}
-            <main className="h[85vh] min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
+            <main className="h-[85vh] md:min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
                 
 
                 <div className="flex flex-col justify-center lg:items-center pt-32 pb-20 lg:flex-row">
-                    <div className="text pt8 flex-1">
+                    <div className="text self-center pt-8 flex-1">
                         <h2 className="font-bold text-2xl sm:text-[48px] leading-[40px] sm:leading-[56px] lgtext-[54px] text-black w-full max-w-[687px]">
                             We give agents and their clients {" "}
                             <span className="text-positive">access</span>  {" "}
