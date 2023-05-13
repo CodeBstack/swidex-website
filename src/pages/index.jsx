@@ -18,7 +18,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScrollButtonVisibility = () => {
-      window.pageYOffset > 300
+      window.pageYOffset > 500
         ? setNavBg(true)
         : setNavBg(false);
     };
@@ -34,7 +34,7 @@ export default function Home() {
         handleScrollButtonVisibility
       );
     };
-  }, []);
+  }, [navBg]);
 
   return (
     <div className="max-w-[1750px] mx-auto">
@@ -44,7 +44,7 @@ export default function Home() {
       ></div>
 
       <nav className={`xl:hidden fixed px-4 sm:px-6 md:px-10 xl:px-[100px] transition-all duration-300 ease-in ${navBg && 'bg-[#ffffff] shadow'} z-[100] w-full top-0 flex justify-between items-center py-3 md:py-4 lg:py-[24px]`}>
-        <Link href='/' className=" z-[100] flex1 pt[37px]">
+        <Link href='/' className=" z-[100] flex-1 pt[37px]">
           <LogoIcon width={'60'} height={'60'} />
         </Link>
         <div className="flex-1 hidden text-base lg:text-lg md:flex justify-between  pt[51px] pb[46px] ">
