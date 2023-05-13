@@ -12,7 +12,7 @@ const HeroSection = () => {
     return (
         <>
             {/* SHOWS ONLY ON SCREENS LOWER THAN 1280PX */}
-            <main className="h-[85vh] md:min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
+            <main className="h-[80vh] md:min-h-screen bg-header-bg bg-cover bg-no-repeat px-4 sm:px-6 md:px-10 xl:px-[100px] pb-10 md:pb-20 xl:hidden">
                 
 
                 <div className="flex flex-col justify-center lg:items-center pt-32 pb-20 lg:flex-row">
